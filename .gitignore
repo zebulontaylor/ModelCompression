@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.cache/
+outputs/
+checkpoints/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Downloaded source datasets. Selected derived calibration sets remain tracked.
+data/raw/
+data/calibration/*
+!data/calibration/mquake_remastered_cf3k_v2/
+!data/calibration/mquake_remastered_cf9k_v2/
+!data/calibration/mquake_cf9k_openmath_v2/
+!data/calibration/openmath_v2/
+!data/calibration/2wiki_v2/
+
+# Experiment outputs are reproducible and can be several gigabytes. A few
+# compact Markdown reports are force-added to Git because README links to them.
+artifacts/

@@ -1,0 +1,70 @@
+{
+  "source": "nvidia/OpenMathInstruct-2",
+  "revision": "469216e3f46f4dacf476b382e192485ea51a143e",
+  "file": "data/train-00000-of-00032.parquet",
+  "file_sha256": "55bae5fa27c8956ab996a94d82fdcda683a650d0a16fe9ee6d26c831adc31087",
+  "license": "CC BY 4.0",
+  "model": "Qwen/Qwen3-1.7B",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "selection": {
+    "problem_sources": [
+      "gsm8k",
+      "math"
+    ],
+    "answer_pattern": "^-?\\d{1,9}$",
+    "max_problem_characters": 600,
+    "deduplicated_by": "normalized problem text",
+    "seed": 42,
+    "candidates": 1200
+  },
+  "filter": "alias-aware normalized exact match on the final-answer line of a deterministic free-running derivation",
+  "generation": {
+    "chat_template": true,
+    "enable_thinking": false,
+    "do_sample": false,
+    "max_new_tokens": 384,
+    "variant": "original"
+  },
+  "score_answer": "the baseline's own accepted derivation, including its final-answer line",
+  "caps": {
+    "calibration": 320,
+    "validation": 128
+  },
+  "condition": "reasoning",
+  "family": "openmath",
+  "test_split_copied": false,
+  "splits": {
+    "calibration": {
+      "candidates": 780,
+      "acceptance_rate": 0.5,
+      "cap": 320,
+      "truncated": 235,
+      "by_problem_source": {
+        "gsm8k": 263,
+        "math": 57
+      },
+      "mean_derivation_characters": 358.478125,
+      "targets": 152,
+      "records_with_full_alternative_count": 320,
+      "output_sha256": "e8054e68e9c6474553d5fc024a04dcfbcbb7d9f8d0741879fb09be5dfe7226d5",
+      "baseline_known": 390,
+      "kept": 320
+    },
+    "validation": {
+      "candidates": 420,
+      "acceptance_rate": 0.5261904761904762,
+      "cap": 128,
+      "truncated": 123,
+      "by_problem_source": {
+        "gsm8k": 104,
+        "math": 24
+      },
+      "mean_derivation_characters": 371.53125,
+      "targets": 90,
+      "records_with_full_alternative_count": 128,
+      "output_sha256": "ecad026dc97c762ec7fccb82c28940109e4dae793aa9981cc8670647008b6586",
+      "baseline_known": 221,
+      "kept": 128
+    }
+  }
+}

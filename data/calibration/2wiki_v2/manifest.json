@@ -1,0 +1,23 @@
+{
+  "source": "data/calibration/2wiki_baseline_known",
+  "raw": null,
+  "metadata_source": "records",
+  "test_split_copied": false,
+  "alternative_policy": "deterministic same-relation targets, excluding accepted answers",
+  "splits": {
+    "calibration": {
+      "records": 1089,
+      "groups": 363,
+      "relations": 14,
+      "targets": 307,
+      "records_with_full_alternative_count": 1080
+    },
+    "validation": {
+      "records": 249,
+      "groups": 83,
+      "relations": 9,
+      "targets": 97,
+      "records_with_full_alternative_count": 240
+    }
+  }
+}

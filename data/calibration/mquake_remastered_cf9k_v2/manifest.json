@@ -1,0 +1,22 @@
+{
+  "source": "data/calibration/mquake_remastered_cf9k_baseline_known",
+  "raw": "data/raw/MQuAKE-Remastered-CF9k.parquet",
+  "test_split_copied": false,
+  "alternative_policy": "deterministic same-relation targets, excluding accepted answers",
+  "splits": {
+    "calibration": {
+      "records": 7101,
+      "groups": 2367,
+      "relations": 27,
+      "targets": 535,
+      "records_with_full_alternative_count": 7086
+    },
+    "validation": {
+      "records": 2640,
+      "groups": 880,
+      "relations": 24,
+      "targets": 306,
+      "records_with_full_alternative_count": 2625
+    }
+  }
+}

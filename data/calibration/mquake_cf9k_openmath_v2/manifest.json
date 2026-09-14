@@ -1,0 +1,49 @@
+{
+  "sources": [
+    "data/calibration/mquake_remastered_cf9k_v2",
+    "data/calibration/openmath_v2"
+  ],
+  "test_split_copied": false,
+  "splits": {
+    "calibration": {
+      "records": 7421,
+      "groups": 2687,
+      "by_corpus": {
+        "data/calibration/mquake_remastered_cf9k_v2": 7101,
+        "data/calibration/openmath_v2": 320
+      },
+      "by_condition": {
+        "recall": 2367,
+        "extraction": 2367,
+        "reasoning": 2687
+      },
+      "by_family": {
+        "recall": 2367,
+        "extraction": 2367,
+        "reasoning": 2367,
+        "openmath": 320
+      },
+      "output_sha256": "b6f3b9a28de1565eca1959eb687b32b9e74db58c5b3ffca82f57bdaf36c87c41"
+    },
+    "validation": {
+      "records": 2768,
+      "groups": 1008,
+      "by_corpus": {
+        "data/calibration/mquake_remastered_cf9k_v2": 2640,
+        "data/calibration/openmath_v2": 128
+      },
+      "by_condition": {
+        "recall": 880,
+        "extraction": 880,
+        "reasoning": 1008
+      },
+      "by_family": {
+        "recall": 880,
+        "extraction": 880,
+        "reasoning": 880,
+        "openmath": 128
+      },
+      "output_sha256": "d9cfcf8a723feab5d05d77572e570c67343989670cf06e35feb1ce79ec1594ce"
+    }
+  }
+}
